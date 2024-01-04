@@ -1,5 +1,10 @@
 #!/bin/bash
 
+sudo apt-get install curl
+sudo apt-get install gnupg
+sudo apt-get install ca-certificates
+sudo apt-get install lsb-release
+
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; 
 do 
   sudo apt-get remove $pkg; 
